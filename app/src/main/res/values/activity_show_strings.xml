@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_show_reference">#ACT-%1$05d</string>
+    <string name="activity_show_sample_reference">#ACT-00001</string>
+    <string name="activity_show_overview">Activity details</string>
+    <string name="activity_show_schedule">Schedule details</string>
+    <string name="activity_show_payment">Payment details</string>
+    <string name="activity_show_notes">Comments</string>
+    <string name="activity_show_title_label">Activity</string>
+    <string name="activity_show_organizer_label">Organizer</string>
+    <string name="activity_show_date_label">Date</string>
+    <string name="activity_show_time_label">Time</string>
+    <string name="activity_show_mode_label">Location</string>
+    <string name="activity_show_payment_method">Payment method</string>
+    <string name="activity_show_amount">Amount</string>
+    <string name="activity_show_total">Total</string>
+    <string name="activity_show_not_required">Not available</string>
+    <string name="activity_show_dash">—</string>
+    <string name="activity_show_no_notes">No additional notes for this activity.</string>
+    <string name="activity_show_hero_title">Activity overview</string>
+    <string name="activity_show_hero_subtitle">Details and schedule at a glance</string>
+    <string name="activity_show_icon_description">Activity calendar</string>
+</resources>

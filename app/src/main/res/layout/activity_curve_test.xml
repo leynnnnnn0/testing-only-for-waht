@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/campus_dashboard_background"
+    android:orientation="vertical"
+    android:paddingHorizontal="22dp"
+    android:paddingTop="18dp"
+    android:paddingBottom="28dp"
+    tools:context=".CurveTestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campus"
+                android:textColor="@color/white"
+                android:textSize="@dimen/type_display" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find"
+                android:textColor="@color/campus_wave_cyan"
+                android:textSize="@dimen/type_display" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Notifications"
+            android:padding="9dp"
+            android:src="@drawable/ic_dashboard_bell"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/campus_avatar_background"
+            android:gravity="center"
+            android:text="MJ"
+            android:textColor="@color/white"
+            android:textSize="@dimen/type_body_large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Good afternoon,"
+                android:textColor="@color/white"
+                android:textSize="@dimen/type_large_heading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maria!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/type_report_total" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="22 October 2026"
+                android:textColor="@color/campus_text_secondary"
+                android:textSize="@dimen/type_body_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="104dp"
+            android:layout_height="96dp"
+            android:background="@drawable/campus_claim_card_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:textColor="@color/white"
+                android:textSize="@dimen/type_metric" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="claims"
+                android:textColor="@color/campus_text_secondary"
+                android:textSize="@dimen/type_body" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/campus_helper_pet"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:contentDescription="Campus lost and found helper"
+            android:scaleType="fitCenter"
+            android:src="@drawable/campus_helper_pet" />
+
+        <FrameLayout
+            android:layout_width="260dp"
+            android:layout_height="112dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp">
+
+            <View
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="44dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:rotation="45" />
+
+            <ViewFlipper
+                android:id="@+id/pet_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:autoStart="true"
+                android:flipInterval="2400"
+                android:inAnimation="@android:anim/fade_in"
+                android:outAnimation="@android:anim/fade_out">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/pet_dialog_background"
+                    android:gravity="center"
+                    android:padding="14dp"
+                    android:text="Lost something?&#10;I can help you find it!"
+                    android:textAlignment="center"
+                    android:textColor="@color/campus_speech_text"
+                    android:textSize="@dimen/type_body_large" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/pet_dialog_background"
+                    android:gravity="center"
+                    android:padding="14dp"
+                    android:text="Check found items&#10;before reporting."
+                    android:textAlignment="center"
+                    android:textColor="@color/campus_speech_text"
+                    android:textSize="@dimen/type_body_large" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/pet_dialog_background"
+                    android:gravity="center"
+                    android:padding="14dp"
+                    android:text="Still missing?&#10;Create a lost-item report."
+                    android:textAlignment="center"
+                    android:textColor="@color/campus_speech_text"
+                    android:textSize="@dimen/type_body_large" />
+            </ViewFlipper>
+        </FrameLayout>
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/find_item_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/campus_action_background"
+        android:text="Find My Item   →"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/type_button" />
+</LinearLayout>

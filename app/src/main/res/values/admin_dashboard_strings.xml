@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string
+        name="admin_hello">Hello</string>
+    <string
+        name="admin_name">Kevin Merico!</string>
+    <string
+        name="admin_initials">KM</string>
+    <string
+        name="admin_subtitle">Keep managing your sales with care.</string>
+    <string
+        name="admin_search_hint">Search transactions...</string>
+    <string name="admin_items_metric_title">Items</string>
+    <string name="admin_persons_metric_title">Persons</string>
+    <string name="admin_items_metric_action">View item list  ›</string>
+    <string name="admin_persons_metric_action">View person list  ›</string>
+    <string
+        name="admin_zero_items">0 items</string>
+    <string name="admin_sample_items">Items</string>
+    <string name="admin_sample_items_subheading">Sample items available to browse</string>
+    <string name="admin_sample_activities">Activities</string>
+    <string name="admin_sample_activities_subheading">Recent invitations and activities</string>
+    <string name="admin_activities_search_hint">Search activities...</string>
+    <string name="admin_activities_online">Online</string>
+    <string name="admin_activities_in_person">In person</string>
+    <string name="admin_items_count">%1$d items</string>
+    <string
+        name="empty_list_title">Oops, the list is empty</string>
+    <string
+        name="empty_list_message">Items will appear here when available.</string>
+    <string
+        name="admin_pending">Pending</string>
+    <string
+        name="admin_all">All</string>
+    <string
+        name="admin_active">Active</string>
+    <string
+        name="admin_inactive">Inactive</string>
+    <string
+        name="admin_rejected">Rejected</string>
+    <string
+        name="admin_cancelled">Cancelled</string>
+</resources>

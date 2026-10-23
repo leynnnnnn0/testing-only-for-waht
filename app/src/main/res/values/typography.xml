@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="type_micro">9sp</dimen>
+    <dimen name="type_caption">10sp</dimen>
+    <dimen name="type_detail">11sp</dimen>
+    <dimen name="type_label">12sp</dimen>
+    <dimen name="type_subheading">13sp</dimen>
+    <dimen name="type_body">14sp</dimen>
+    <dimen name="type_button">15sp</dimen>
+    <dimen name="type_body_large">16sp</dimen>
+    <dimen name="type_person_name">17sp</dimen>
+    <dimen name="type_card_heading">18sp</dimen>
+    <dimen name="type_card_heading_large">19sp</dimen>
+    <dimen name="type_section_heading">20sp</dimen>
+    <dimen name="type_report_section">21sp</dimen>
+    <dimen name="type_page_heading">22sp</dimen>
+    <dimen name="type_large_heading">24sp</dimen>
+    <dimen name="type_report_title">25sp</dimen>
+    <dimen name="type_metric">26sp</dimen>
+    <dimen name="type_dashboard_greeting">27sp</dimen>
+    <dimen name="type_display">28sp</dimen>
+    <dimen name="type_modal_symbol">36sp</dimen>
+    <dimen name="type_report_total">46sp</dimen>
+    <dimen name="type_auth_hero">34sp</dimen>
+</resources>

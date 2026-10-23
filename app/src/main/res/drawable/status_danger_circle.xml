@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="?attr/rolePrimaryLight"/>
+        </shape>
+    </item>
+
+    <item android:left="13dp" android:top="13dp"
+        android:right="13dp" android:bottom="13dp">
+        <shape android:shape="oval">
+            <gradient android:angle="270"
+                android:startColor="@color/destructive"
+                android:endColor="@color/badge_red"/>
+        </shape>
+    </item>
+
+</layer-list>

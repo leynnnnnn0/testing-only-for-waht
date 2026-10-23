@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profile_public_heading">Public profile</string>
+    <string name="profile_public_hint">Update the details shown on your profile.</string>
+    <string name="profile_name_label">Full name *</string>
+    <string name="profile_email_label">Email address *</string>
+    <string name="profile_name_error">Enter your name</string>
+    <string name="profile_email_error">Enter a valid email address</string>
+    <string name="profile_preferences_heading">Preferences</string>
+    <string name="profile_notifications_label">Notifications</string>
+    <string name="profile_notifications_hint">Show account and activity updates.</string>
+    <string name="profile_logout_label">Log out</string>
+    <string name="profile_logout_hint">Return to the sign-in screen.</string>
+    <string name="profile_cancel">Cancel</string>
+    <string name="profile_save">Save changes</string>
+    <string name="profile_saved_title">Profile saved</string>
+    <string name="profile_saved_message">Your changes are ready.</string>
+    <string name="profile_save_error_title">Save failed</string>
+    <string name="profile_save_error_message">Please try again.</string>
+    <string name="profile_save_title">Save profile changes?</string>
+    <string name="profile_save_message">Your profile details will be updated on this device.</string>
+    <string name="profile_role_label">Role</string>
+    <string name="profile_access_label">Access</string>
+    <string name="profile_status_label">Status</string>
+    <string name="personal_profile_email">alex.rivera@example.com</string>
+    <string name="admin_profile_email">kevin.merico@example.com</string>
+</resources>

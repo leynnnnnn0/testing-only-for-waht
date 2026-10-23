@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_page_title">Create Entry</string>
+    <string name="create_page_heading">Create New Entry</string>
+    <string name="create_page_subtitle">Fill in the details below.</string>
+    <string name="create_image_hint">Tap to choose an image</string>
+    <string name="create_image_note">JPG or PNG image</string>
+    <string name="create_name_label">Name *</string>
+    <string name="create_name_hint">Enter a name</string>
+    <string name="create_number_label">Number</string>
+    <string name="create_number_hint">Enter a number</string>
+    <string name="create_description_label">Description</string>
+    <string name="create_description_hint">Write a short description</string>
+    <string name="create_tags_label">Tags (select multiple)</string>
+    <string name="create_tag_design">Design</string>
+    <string name="create_tag_marketing">Marketing</string>
+    <string name="create_tag_documentation">Documentation</string>
+    <string name="create_date_label">Date</string>
+    <string name="create_date_hint">Pick a date</string>
+    <string name="create_time_label">Time</string>
+    <string name="create_time_hint">Pick a time</string>
+    <string name="create_option_label">Category</string>
+    <string name="create_radio_label">Status</string>
+    <string name="create_radio_active">Active</string>
+    <string name="create_radio_inactive">Inactive</string>
+    <string name="create_checkbox">Make this visible</string>
+    <string name="create_save">Save Entry</string>
+    <string name="create_name_required">Name is required</string>
+    <string name="create_confirm_title">Continue with this entry?</string>
+    <string name="create_confirm_message">Review the details before continuing.</string>
+    <string name="create_done_title">Form complete</string>
+    <string name="create_done_message">The sample form is ready to connect to your data.</string>
+    <string-array name="create_categories">
+        <item>General</item>
+        <item>Food</item>
+        <item>Service</item>
+    </string-array>
+</resources>

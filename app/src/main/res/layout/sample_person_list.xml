@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="7dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/search_border"
+    app:strokeWidth="1dp">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/user_initials"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/user_avatar_background"
+                    android:gravity="center"
+                    android:text="@string/sample_user_initials"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/type_card_heading"
+                    android:textStyle="bold" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:shapeAppearanceOverlay="@style/UserAvatarShape" />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/sample_user_name"
+                    android:textColor="@color/text_heading"
+                    android:textSize="@dimen/type_person_name"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/sample_user_email"
+                    android:textColor="@color/text_subheading"
+                    android:textSize="@dimen/type_label" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/user_status"
+                    style="@style/green_badge"
+                    android:text="@string/user_active" />
+                <TextView
+                    android:id="@+id/user_joined"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/sample_user_joined"
+                    android:textColor="@color/text_subheading"
+                    android:textSize="@dimen/type_caption" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/user_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/person_tag_background"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="7dp"
+                android:text="@string/sample_user_role"
+                android:textColor="?attr/rolePrimaryDark"
+                android:textSize="@dimen/type_label" />
+            <TextView
+                android:id="@+id/user_specialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/person_tag_secondary_background"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="7dp"
+                android:text="@string/sample_user_specialty"
+                android:textColor="@color/text_heading"
+                android:textSize="@dimen/type_label" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/person_facts_background"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="12dp">
+            <LinearLayout style="@style/PersonFactColumn">
+                <TextView style="@style/PersonFactLabel" android:text="@string/person_age_label" />
+                <TextView android:id="@+id/user_age" style="@style/PersonFactValue" android:text="@string/sample_user_age" />
+            </LinearLayout>
+            <LinearLayout style="@style/PersonFactColumn">
+                <TextView style="@style/PersonFactLabel" android:text="@string/person_gender_label" />
+                <TextView android:id="@+id/user_gender" style="@style/PersonFactValue" android:text="@string/person_gender_sample" />
+            </LinearLayout>
+            <LinearLayout style="@style/PersonFactColumn">
+                <TextView style="@style/PersonFactLabel" android:text="@string/person_location_label" />
+                <TextView android:id="@+id/user_location" style="@style/PersonFactValue" android:text="@string/sample_user_location" />
+            </LinearLayout>
+            <LinearLayout style="@style/PersonFactColumn">
+                <TextView style="@style/PersonFactLabel" android:text="@string/person_credits_label" />
+                <TextView android:id="@+id/user_credits" style="@style/PersonFactValue" android:text="@string/sample_user_credits" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/person_quick_actions"
+                android:textColor="@color/text_subheading"
+                android:textSize="@dimen/type_label" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/user_edit"
+                android:layout_width="82dp"
+                android:layout_height="38dp"
+                android:background="@drawable/admin_outline_background"
+                android:elevation="2dp"
+                android:text="@string/user_edit"
+                android:textAllCaps="false"
+                android:textColor="?attr/rolePrimaryDark"
+                android:textSize="@dimen/type_subheading" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/user_delete"
+                android:layout_width="82dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/admin_outline_background"
+                android:elevation="2dp"
+                android:text="@string/user_delete"
+                android:textAllCaps="false"
+                android:textColor="@color/destructive"
+                android:textSize="@dimen/type_subheading" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/rolePageBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+        <ImageButton
+            android:id="@+id/report_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_list_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arial_rounded_mt_bold"
+            android:gravity="center"
+            android:text="@string/report_title"
+            android:textColor="@color/text_heading"
+            android:textSize="@dimen/type_page_heading" />
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/report_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="24dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial_rounded_mt_bold"
+                android:text="@string/report_overview"
+                android:textColor="@color/text_heading"
+                android:textSize="@dimen/type_report_title" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/report_overview_subtitle"
+                android:textColor="@color/text_subheading"
+                android:textSize="@dimen/type_body" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/admin_feature_background"
+                android:orientation="vertical"
+                android:padding="24dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/report_total_count"
+                    android:textColor="?attr/rolePrimaryLight"
+                    android:textSize="@dimen/type_button" />
+                <TextView
+                    android:id="@+id/report_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/arial_rounded_mt_bold"
+                    android:text="@string/report_sample_total"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/type_report_total" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/report_total_caption"
+                    android:textColor="?attr/rolePrimaryLight"
+                    android:textSize="@dimen/type_subheading" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/report_sample_label"
+                    android:textColor="?attr/roleAccent"
+                    android:textSize="@dimen/type_label" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/arial_rounded_mt_bold"
+                android:text="@string/report_breakdown"
+                android:textColor="@color/text_heading"
+                android:textSize="@dimen/type_report_section" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/report_breakdown_subtitle"
+                android:textColor="@color/text_subheading"
+                android:textSize="@dimen/type_subheading" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include
+                    android:id="@+id/report_completed"
+                    layout="@layout/report_bar_row" />
+                <include
+                    android:id="@+id/report_progress"
+                    layout="@layout/report_bar_row" />
+                <include
+                    android:id="@+id/report_cancelled"
+                    layout="@layout/report_bar_row" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/admin_outline_background"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arial_rounded_mt_bold"
+                    android:text="@string/report_note_title"
+                    android:textColor="?attr/rolePrimaryDark"
+                    android:textSize="@dimen/type_body_large" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/report_note"
+                    android:textColor="@color/text_body"
+                    android:textSize="@dimen/type_subheading" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/report_download"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/report_download_background"
+        android:elevation="0dp"
+        android:fontFamily="@font/arial_rounded_mt_bold"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:stateListAnimator="@null"
+        android:text="@string/report_download_pdf"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/type_body_large" />
+</LinearLayout>

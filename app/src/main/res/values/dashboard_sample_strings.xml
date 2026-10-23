@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string
+        name="dashboard_brand">Sample App</string>
+    <string
+        name="dashboard_panel">Dashboard Overview</string>
+    <string
+        name="dashboard_initials">SU</string>
+    <string
+        name="dashboard_greeting">Welcome back!</string>
+    <string
+        name="dashboard_description">Here’s an overview of your activity.</string>
+    <string
+        name="dashboard_important">Important List</string>
+    <string
+        name="dashboard_important_subtitle">Latest activities that need your attention.</string>
+    <string
+        name="dashboard_count">0</string>
+    <string
+        name="dashboard_users">Users</string>
+    <string
+        name="dashboard_items">Items</string>
+    <string
+        name="dashboard_requests">Requests</string>
+    <string
+        name="dashboard_completed">Completed</string>
+    <string
+        name="dashboard_users_number">248</string>
+    <string
+        name="dashboard_users_growth">↑ 12%</string>
+    <string
+        name="dashboard_items_number">36</string>
+    <string
+        name="dashboard_items_growth">↑ 8%</string>
+    <string
+        name="dashboard_requests_number">72</string>
+    <string
+        name="dashboard_requests_growth">↑ 5%</string>
+    <string
+        name="dashboard_completed_number">120</string>
+    <string
+        name="dashboard_completed_growth">↑ 18%</string>
+    <string
+        name="dashboard_notifications_title">Notifications</string>
+    <string
+        name="dashboard_notification_title">New update</string>
+    <string
+        name="dashboard_notification_message">You have a new activity to review.</string>
+    <string
+        name="dashboard_notification_time">Just now</string>
+</resources>

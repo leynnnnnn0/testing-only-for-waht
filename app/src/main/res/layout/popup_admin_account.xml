@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="188dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/admin_account_menu_background"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/account_profile"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@null"
+        android:gravity="center_vertical|start"
+        android:minWidth="0dp"
+        android:paddingHorizontal="14dp"
+        android:text="@string/admin_profile_action"
+        android:textAllCaps="false"
+        android:textColor="@color/text_heading"
+        android:textSize="@dimen/type_body" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/page_divider" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/account_logout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@null"
+        android:gravity="center_vertical|start"
+        android:minWidth="0dp"
+        android:paddingHorizontal="14dp"
+        android:text="@string/admin_logout_action"
+        android:textAllCaps="false"
+        android:textColor="@color/destructive"
+        android:textSize="@dimen/type_body" />
+</LinearLayout>

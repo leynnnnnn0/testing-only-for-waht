@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="rolePrimary" format="color" />
+    <attr name="rolePrimaryDark" format="color" />
+    <attr name="rolePrimaryLight" format="color" />
+    <attr name="roleAccent" format="color" />
+    <attr name="roleOnPrimary" format="color" />
+    <attr name="rolePageBackground" format="color" />
+    <attr name="roleOverlayStart" format="color" />
+    <attr name="roleOverlayEnd" format="color" />
+</resources>

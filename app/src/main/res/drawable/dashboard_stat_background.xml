@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="152dp"
+    android:viewportWidth="180"
+    android:viewportHeight="152">
+    <path
+        android:fillColor="?attr/rolePrimaryLight"
+        android:pathData="M0,0H180V152H0Z" />
+    <path
+        android:fillColor="?attr/rolePrimaryLight"
+        android:pathData="M65,152C90,115 112,142 136,100C151,76 168,72 180,72V152Z" />
+    <path
+        android:fillColor="?attr/rolePrimaryLight"
+        android:pathData="M94,152C118,111 140,143 180,110V152Z" />
+</vector>

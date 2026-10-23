@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="360dp"
+    android:height="800dp"
+    android:viewportWidth="360"
+    android:viewportHeight="800">
+
+    <path android:pathData="M0,0H360V800H0Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="360"
+                android:endY="800"
+                android:endColor="@color/campus_background_end"
+                android:startColor="@color/campus_background_start"
+                android:startX="0"
+                android:startY="0"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <path
+        android:fillAlpha="0.48"
+        android:fillColor="@color/campus_background_end"
+        android:pathData="M115,-70H360V126C292,179 228,161 177,204C130,244 88,279 0,274V122C72,92 103,37 115,-70Z" />
+
+    <path
+        android:fillAlpha="0.9"
+        android:fillColor="@color/campus_wave_cyan"
+        android:pathData="M0,239C69,205 103,232 143,286C190,351 239,353 360,318V552C275,584 193,568 124,514C73,474 42,415 0,410Z" />
+
+    <path
+        android:fillAlpha="0.5"
+        android:fillColor="@color/campus_background_end"
+        android:pathData="M0,320C78,294 91,365 148,421C204,476 277,492 360,454V682C257,713 133,667 0,596Z" />
+
+    <path
+        android:fillAlpha="0.72"
+        android:fillColor="@color/campus_wave_indigo"
+        android:pathData="M0,421C49,388 93,415 126,469C171,544 250,569 360,510V800H0Z" />
+
+    <path
+        android:fillAlpha="0.88"
+        android:fillColor="@color/campus_background_start"
+        android:pathData="M0,506C84,469 152,535 220,592C277,641 320,655 360,628V800H0Z" />
+
+    <path android:pathData="M360,344C318,340 287,371 287,414C287,459 320,489 360,492Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="340"
+                android:centerY="404"
+                android:endColor="@color/campus_wave_indigo"
+                android:gradientRadius="90"
+                android:startColor="@color/campus_orb_pink"
+                android:type="radial" />
+        </aapt:attr>
+    </path>
+
+    <path
+        android:fillAlpha="0.9"
+        android:fillColor="@color/campus_background_end"
+        android:pathData="M0,705C75,655 150,713 224,762C275,797 320,812 360,783V800H0Z" />
+</vector>

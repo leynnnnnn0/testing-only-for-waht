@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="admin_account_menu">Open account menu</string>
+    <string name="admin_profile_action">Profile</string>
+    <string name="admin_logout_action">Logout</string>
+    <string name="admin_profile_title">My Profile</string>
+    <string name="admin_profile_name">Kevin Merico</string>
+    <string name="admin_profile_role">Administrator</string>
+    <string name="admin_profile_access">Admin dashboard</string>
+    <string name="admin_profile_status">Active</string>
+</resources>

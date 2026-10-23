@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/admin_transaction_row_background">
+    <ImageView
+        android:id="@+id/transaction_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/admin_avatar_background"
+        android:padding="12dp"
+        android:tint="?attr/rolePrimaryDark"
+        tools:src="@drawable/ic_admin_shirt" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/transaction_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_heading"
+            android:textSize="@dimen/type_body"
+            android:fontFamily="@font/arial_rounded_mt_bold"
+            tools:text="Tinek Detstar T-Shirt" />
+        <TextView
+            android:id="@+id/transaction_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_subheading"
+            android:textSize="@dimen/type_label"
+            tools:text="Jul 12th 2024" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end">
+        <TextView
+            android:id="@+id/transaction_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_body"
+            android:textSize="@dimen/type_label"
+            tools:text="Completed" />
+        <TextView
+            android:id="@+id/transaction_reference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_subheading"
+            android:textSize="@dimen/type_detail"
+            tools:text="OJWEJS7ISNC" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string
+        name="app_name">RestaurantApp</string>
+    <string
+        name="confirm_arrow">Confirm  →</string>
+    <string
+        name="sample_user_name">Alex Morgan</string>
+    <string
+        name="sample_user_role">Member</string>
+    <string
+        name="user_active">Active</string>
+    <string
+        name="user_inactive">Inactive</string>
+    <string
+        name="user_edit">Edit</string>
+    <string
+        name="user_delete">Delete</string>
+    <string name="person_quick_actions">Quick Actions</string>
+    <string
+        name="user_delete_title">Delete user?</string>
+    <string
+        name="user_delete_message">Remove %1$s from this sample list?</string>
+    <string
+        name="user_edit_preview">Edit %1$s</string>
+    <string
+        name="user_edit_note">Connect this button to your edit screen.</string>
+    <string
+        name="sample_user_initials">AM</string>
+    <string
+        name="sample_user_credits">250 credits</string>
+    <string
+        name="sample_user_age">29 years old</string>
+    <string
+        name="sample_user_location">Manila, PH</string>
+    <string
+        name="sample_user_email">jamie.reyes@example.com</string>
+    <string
+        name="sample_user_joined">Joined Jan 12, 2024</string>
+    <string
+        name="sample_user_specialty">Certified Level 2</string>
+    <string
+        name="user_credits">%1$d credits</string>
+    <string
+        name="user_age">%1$d years old</string>
+    <string
+        name="user_joined">Joined %1$s</string>
+</resources>

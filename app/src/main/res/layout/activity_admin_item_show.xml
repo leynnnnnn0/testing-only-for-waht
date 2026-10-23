@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/rolePageBackground"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+                <ImageView
+                    android:id="@+id/item_show_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample_item_photo" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp"
+                    android:paddingTop="20dp">
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/item_show_back"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/item_show_icon_background"
+                        android:contentDescription="@string/item_show_close"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_list_back"
+                        app:tint="@color/text_heading" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/item_show_favorite"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/item_show_icon_background"
+                        android:contentDescription="@string/item_show_favorite"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_item_heart"
+                        app:tint="@color/destructive" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="292dp"
+                android:background="@drawable/item_show_sheet_background"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="28dp">
+                <TextView
+                    android:id="@+id/item_show_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arial_rounded_mt_bold"
+                    android:text="@string/sample_item_name"
+                    android:textColor="@color/text_heading"
+                    android:textSize="@dimen/type_large_heading" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/item_show_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_item_star"
+                        android:drawablePadding="5dp"
+                        android:text="@string/sample_item_rating"
+                        android:textColor="@color/text_body"
+                        android:textSize="@dimen/type_subheading" />
+                    <TextView
+                        android:id="@+id/item_show_location"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_user_location"
+                        android:drawablePadding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_subheading"
+                        android:textSize="@dimen/type_subheading" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/person_facts_background"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="12dp">
+                    <LinearLayout
+                        style="@style/PersonFactColumn">
+                        <TextView
+                            style="@style/PersonFactLabel"
+                            android:text="@string/item_show_category_label" />
+                        <TextView
+                            android:id="@+id/item_show_category"
+                            style="@style/PersonFactValue"
+                            android:text="@string/sample_item_category" />
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/PersonFactColumn">
+                        <TextView
+                            style="@style/PersonFactLabel"
+                            android:text="@string/item_show_detail_label" />
+                        <TextView
+                            android:id="@+id/item_show_detail"
+                            style="@style/PersonFactValue"
+                            android:text="@string/sample_item_detail" />
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/PersonFactColumn">
+                        <TextView
+                            style="@style/PersonFactLabel"
+                            android:text="@string/item_show_tag_label" />
+                        <TextView
+                            android:id="@+id/item_show_tag"
+                            style="@style/PersonFactValue" />
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/PersonFactColumn">
+                        <TextView
+                            style="@style/PersonFactLabel"
+                            android:text="@string/item_show_status_label" />
+                        <TextView
+                            android:id="@+id/item_show_status"
+                            style="@style/PersonFactValue" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/item_show_about_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/arial_rounded_mt_bold"
+                    android:text="@string/item_show_about"
+                    android:textColor="@color/text_heading"
+                    android:textSize="@dimen/type_card_heading" />
+                <TextView
+                    android:id="@+id/item_show_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="@string/item_show_sample_description"
+                    android:textColor="@color/text_body"
+                    android:textSize="@dimen/type_body" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_show_from"
+                android:textColor="@color/text_subheading"
+                android:textSize="@dimen/type_caption" />
+            <TextView
+                android:id="@+id/item_show_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/arial_rounded_mt_bold"
+                android:text="@string/sample_item_price"
+                android:textColor="?attr/rolePrimaryDark"
+                android:textSize="@dimen/type_card_heading" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/item_show_share"
+            android:layout_width="154dp"
+            android:layout_height="52dp"
+            android:background="@drawable/item_action_background"
+            android:text="@string/item_show_share"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/type_button" />
+    </LinearLayout>
+</LinearLayout>

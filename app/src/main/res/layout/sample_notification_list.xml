@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="6dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/modal_card">
+    <ImageView
+        android:id="@+id/notification_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:padding="10dp"
+        android:background="@drawable/user_avatar_background"
+        android:src="@drawable/ic_dashboard_bell"
+        android:tint="@color/white" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/notification_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dashboard_notification_title"
+            android:textSize="@dimen/type_body"
+            android:textStyle="bold"
+            android:textColor="@color/text_heading" />
+        <TextView
+            android:id="@+id/notification_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/dashboard_notification_message"
+            android:textSize="@dimen/type_label"
+            android:textColor="@color/text_subheading" />
+        <TextView
+            android:id="@+id/notification_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/dashboard_notification_time"
+            android:textSize="@dimen/type_caption"
+            android:textColor="?attr/rolePrimaryDark" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/notification_remove"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/user_detail_background"
+        android:padding="9dp"
+        android:src="@drawable/ic_notification_close"
+        android:tint="@color/text_body" />
+</LinearLayout>

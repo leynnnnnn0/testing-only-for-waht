@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="?attr/rolePrimaryLight"
+    app:cardBackgroundColor="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/activity_card_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top">
+            <ImageView
+                android:id="@+id/activity_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:background="@drawable/activity_icon_background"
+                android:src="@drawable/ic_user_email"
+                android:tint="?attr/rolePrimaryDark" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/activity_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sample_activity_title"
+                    android:textSize="@dimen/type_body_large"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_heading" />
+                <TextView
+                    android:id="@+id/activity_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sample_activity_subtitle"
+                    android:textSize="@dimen/type_label"
+                    android:textColor="@color/text_subheading" />
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/activity_more"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:padding="8dp"
+                android:background="@drawable/user_detail_background"
+                android:src="@drawable/ic_activity_more" />
+        </LinearLayout>
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:chipSpacingHorizontal="8dp"
+            app:chipSpacingVertical="8dp">
+            <TextView
+                android:id="@+id/activity_type"
+                style="@style/green_badge"
+                android:text="@string/sample_activity_type" />
+            <TextView
+                android:id="@+id/activity_date"
+                style="@style/UserDetail"
+                android:text="@string/sample_activity_date" />
+            <TextView
+                android:id="@+id/activity_time"
+                style="@style/UserDetail"
+                android:text="@string/sample_activity_time" />
+            <TextView
+                android:id="@+id/activity_mode"
+                style="@style/UserDetail"
+                android:text="@string/sample_activity_mode" />
+        </com.google.android.material.chip.ChipGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/activity_organizer_avatar"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/user_avatar_background"
+                android:backgroundTint="?attr/rolePrimaryLight"
+                android:gravity="center"
+                android:text="@string/sample_activity_initials"
+                android:textStyle="bold"
+                android:textSize="@dimen/type_label"
+                android:textColor="?attr/rolePrimaryDark" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/activity_organizer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sample_activity_organizer"
+                    android:textSize="@dimen/type_label"
+                    android:textStyle="bold"
+                    android:textColor="?attr/rolePrimaryDark" />
+                <TextView
+                    android:id="@+id/activity_organizer_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/sample_activity_role"
+                    android:textSize="@dimen/type_caption"
+                    android:textColor="@color/text_subheading" />
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/activity_secondary_action"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:minWidth="0dp"
+                android:paddingHorizontal="10dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/sample_activity_secondary"
+                android:textColor="@color/text_body"
+                android:textSize="@dimen/type_detail"
+                android:textAllCaps="false"
+                app:cornerRadius="100dp"
+                app:strokeColor="?attr/rolePrimaryLight"
+                app:strokeWidth="1dp"
+                app:backgroundTint="?attr/rolePrimaryLight" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/activity_primary_action"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:minWidth="0dp"
+                android:paddingHorizontal="12dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:background="@drawable/activity_action_background"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
+                android:text="@string/sample_activity_primary"
+                android:textColor="@color/white"
+                android:textSize="@dimen/type_detail"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_user_chevron"
+                app:iconTint="@color/white"
+                app:iconSize="14dp"
+                app:iconGravity="textEnd"
+                app:iconPadding="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

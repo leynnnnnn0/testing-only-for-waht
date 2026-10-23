@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth_login_title">Welcome\nBack</string>
+    <string name="auth_login_subtitle">Glad to see you again.\nSign in to continue your journey.</string>
+    <string name="auth_signup_title">Create Your\nAccount</string>
+    <string name="auth_signup_subtitle">Join us and start your journey today.</string>
+    <string name="auth_first_name">First Name</string>
+    <string name="auth_last_name">Last Name</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_password">Password</string>
+    <string name="auth_confirm_password">Confirm Password</string>
+    <string name="auth_first_name_hint">Enter your first name</string>
+    <string name="auth_last_name_hint">Enter your last name</string>
+    <string name="auth_email_hint">Email address</string>
+    <string name="auth_password_hint">Enter your password</string>
+    <string name="auth_confirm_hint">Confirm your password</string>
+    <string name="auth_forgot">Forgot Password?</string>
+    <string name="auth_login_action">Sign In</string>
+    <string name="auth_register_action">Create Account</string>
+    <string name="auth_upload_title">Add profile photo</string>
+    <string name="auth_upload_subtitle">Tap to choose an image</string>
+    <string name="auth_back">Back</string>
+    <string name="auth_sample_title">Password reset</string>
+    <string name="auth_sample_message">Password reset is not available yet.</string>
+    <string name="auth_required">Please fill in this field</string>
+    <string name="auth_password_mismatch">Passwords do not match</string>
+    <string name="auth_no_account">Don’t have an account?</string>
+    <string name="auth_have_account">Already have an account?</string>
+    <string name="auth_signup_link">Sign Up</string>
+    <string name="auth_signin_link">Sign In</string>
+    <string name="auth_profile_photo_label">Profile Photo</string>
+    <string name="auth_login_failed">Sign in failed</string>
+    <string name="auth_login_failed_message">Check your email and password.</string>
+    <string name="auth_email_exists">This email is already registered</string>
+    <string name="auth_demo_credentials">Demo: morgan.lee@example.com (Admin) or alex.rivera@example.com (Personal). Password: 1234</string>
+</resources>

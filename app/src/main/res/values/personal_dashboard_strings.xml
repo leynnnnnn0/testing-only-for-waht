@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="personal_dashboard_title">My Dashboard</string>
+    <string name="personal_dashboard_subtitle">Explore what matters to you.</string>
+    <string name="personal_dashboard_search">Search anything...</string>
+    <string name="personal_dashboard_notifications">Notifications</string>
+    <string name="personal_dashboard_account">Account</string>
+    <string name="personal_dashboard_initials">AR</string>
+    <string name="personal_profile_title">My Profile</string>
+    <string name="personal_profile_name">Alex Rivera</string>
+    <string name="personal_profile_role">Member</string>
+    <string name="personal_profile_access">Personal dashboard</string>
+    <string name="personal_profile_status">Active</string>
+    <string name="personal_notification_reservation_title">Reservation confirmed</string>
+    <string name="personal_notification_reservation_message">Your table is ready for your visit.</string>
+    <string name="personal_notification_item_title">New item to explore</string>
+    <string name="personal_notification_item_message">Take a look at what is new on the menu.</string>
+    <string name="personal_notification_appointment_title">Appointment reminder</string>
+    <string name="personal_notification_appointment_message">You have an upcoming appointment.</string>
+    <string name="personal_notification_now">Just now</string>
+    <string name="personal_notification_hour">1 hour ago</string>
+    <string name="personal_notification_yesterday">Yesterday</string>
+    <string name="personal_featured_title">Featured Items</string>
+    <string name="personal_featured_subtitle">Picked for you to explore</string>
+    <string name="personal_activities_title">Activities</string>
+    <string name="personal_activities_subtitle">Recent invitations and activities</string>
+    <string name="personal_activities_search_hint">Search activities…</string>
+    <string name="personal_activity_filter_all">All</string>
+    <string name="personal_activity_filter_online">Online</string>
+    <string name="personal_activity_filter_in_person">In person</string>
+    <string name="personal_search_title">Explore items</string>
+    <string name="personal_search_hint">Search items…</string>
+    <string name="personal_search_close_description">Close search</string>
+    <string name="personal_search_all">All</string>
+    <string name="personal_seat_three">3 Seaters</string>
+    <string name="personal_seat_five">5 Seaters</string>
+    <string name="personal_seat_six">6 Seaters</string>
+    <string name="personal_seat_eight">8 Seaters</string>
+</resources>

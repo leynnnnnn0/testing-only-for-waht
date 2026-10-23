@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="item_show_sample_description">A fresh favorite made with quality ingredients.</string>
+    <string name="item_show_detail_label">Details</string>
+    <string name="item_show_category_label">Category</string>
+    <string name="item_show_tag_label">Tag</string>
+    <string name="item_show_status_label">Status</string>
+    <string name="item_show_share">Share Item</string>
+    <string name="item_show_close">Go Back</string>
+    <string name="item_show_about">About this item</string>
+    <string name="item_show_about_vehicle">About this vehicle</string>
+    <string name="item_show_from">Starting from</string>
+    <string name="item_show_favorite">Save item</string>
+</resources>

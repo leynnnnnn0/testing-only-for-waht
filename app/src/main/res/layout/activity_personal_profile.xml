@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/rolePageBackground"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/profile_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/auth_back"
+            android:padding="8dp"
+            android:src="@drawable/ic_list_back" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/personal_profile_title"
+            android:textColor="@color/text_heading"
+            android:textSize="@dimen/type_page_heading" />
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="196dp">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="152dp"
+                        android:background="@drawable/profile_cover_background" />
+                    <TextView
+                        android:id="@+id/profile_avatar"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="top|start"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="112dp"
+                        android:background="@drawable/user_avatar_background"
+                        android:elevation="4dp"
+                        android:fontFamily="@font/arial_rounded_mt_bold"
+                        android:gravity="center"
+                        android:text="@string/personal_dashboard_initials"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/type_metric" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="24dp"
+                    android:paddingBottom="24dp">
+                    <TextView
+                        android:id="@+id/profile_display_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arial_rounded_mt_bold"
+                        android:text="@string/personal_profile_name"
+                        android:textColor="@color/text_heading"
+                        android:textSize="@dimen/type_page_heading" />
+                    <TextView
+                        android:id="@+id/profile_display_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/personal_profile_email"
+                        android:textColor="@color/text_subheading"
+                        android:textSize="@dimen/type_subheading" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/person_facts_background"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="14dp">
+                        <LinearLayout
+                            style="@style/PersonFactColumn">
+                            <TextView
+                                style="@style/PersonFactLabel"
+                                android:text="@string/profile_role_label" />
+                            <TextView
+                                style="@style/PersonFactValue"
+                                android:text="@string/personal_profile_role" />
+                        </LinearLayout>
+                        <LinearLayout
+                            style="@style/PersonFactColumn">
+                            <TextView
+                                style="@style/PersonFactLabel"
+                                android:text="@string/profile_access_label" />
+                            <TextView
+                                style="@style/PersonFactValue"
+                                android:text="@string/personal_profile_access" />
+                        </LinearLayout>
+                        <LinearLayout
+                            style="@style/PersonFactColumn">
+                            <TextView
+                                style="@style/PersonFactLabel"
+                                android:text="@string/profile_status_label" />
+                            <TextView
+                                style="@style/PersonFactValue"
+                                android:text="@string/personal_profile_status" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="28dp"
+                        android:background="@color/page_divider" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/arial_rounded_mt_bold"
+                        android:text="@string/profile_public_heading"
+                        android:textColor="@color/text_heading"
+                        android:textSize="@dimen/type_card_heading" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/profile_public_hint"
+                        android:textColor="@color/text_subheading"
+                        android:textSize="@dimen/type_subheading" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:text="@string/profile_name_label"
+                        android:textColor="@color/text_heading"
+                        android:textSize="@dimen/type_label" />
+                    <EditText
+                        android:id="@+id/profile_name_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/form_field_background"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="14dp"
+                        android:singleLine="true"
+                        android:textColor="@color/field_text"
+                        android:textSize="@dimen/type_body" />
+                    <TextView
+                        android:id="@+id/profile_name_error"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/profile_name_error"
+                        android:textColor="@color/field_error"
+                        android:textSize="@dimen/type_caption"
+                        android:visibility="gone" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/profile_email_label"
+                        android:textColor="@color/text_heading"
+                        android:textSize="@dimen/type_label" />
+                    <EditText
+                        android:id="@+id/profile_email_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/form_field_background"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="14dp"
+                        android:singleLine="true"
+                        android:textColor="@color/field_text"
+                        android:textSize="@dimen/type_body" />
+                    <TextView
+                        android:id="@+id/profile_email_error"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/profile_email_error"
+                        android:textColor="@color/field_error"
+                        android:textSize="@dimen/type_caption"
+                        android:visibility="gone" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="28dp"
+                        android:background="@color/page_divider" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/arial_rounded_mt_bold"
+                        android:text="@string/profile_preferences_heading"
+                        android:textColor="@color/text_heading"
+                        android:textSize="@dimen/type_card_heading" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_notifications_label"
+                                android:textColor="@color/text_heading"
+                                android:textSize="@dimen/type_body" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/profile_notifications_hint"
+                                android:textColor="@color/text_subheading"
+                                android:textSize="@dimen/type_subheading" />
+                        </LinearLayout>
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/profile_notifications_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            app:thumbTint="?attr/rolePrimaryDark"
+                            app:trackTint="?attr/rolePrimaryLight" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_logout_label"
+                                android:textColor="@color/text_heading"
+                                android:textSize="@dimen/type_body" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/profile_logout_hint"
+                                android:textColor="@color/text_subheading"
+                                android:textSize="@dimen/type_subheading" />
+                        </LinearLayout>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/profile_logout"
+                            android:layout_width="90dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/admin_outline_background"
+                            android:text="@string/profile_logout_label"
+                            android:textAllCaps="false"
+                            android:textColor="@color/destructive"
+                            android:textSize="@dimen/type_label" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="28dp"
+                        android:background="@color/page_divider" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/profile_cancel"
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/admin_outline_background"
+                            android:text="@string/profile_cancel"
+                            android:textAllCaps="false"
+                            android:textColor="@color/text_heading"
+                            android:textSize="@dimen/type_body" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/profile_save"
+                            android:layout_width="140dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/form_action_solid"
+                            android:text="@string/profile_save"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/type_body" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </ScrollView>
+</LinearLayout>

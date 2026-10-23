@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingHorizontal="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:padding="9dp"
+            android:background="@drawable/dashboard_logo_background"
+            android:src="@drawable/ic_list_grid"
+            android:tint="@color/white" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dashboard_brand"
+                android:textColor="@color/text_heading"
+                android:textSize="@dimen/type_section_heading"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dashboard_panel"
+                android:textColor="@color/text_subheading"
+                android:textSize="@dimen/type_subheading" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/dashboard_notifications_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+                android:id="@+id/dashboard_bell_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="9dp"
+                android:background="@drawable/user_detail_background"
+                android:backgroundTint="@color/dashboard_bell_background"
+                android:src="@drawable/ic_dashboard_bell"
+                android:tint="@color/dashboard_bell_tint" />
+            <View
+                android:id="@+id/dashboard_notification_dot"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="5dp"
+                android:background="@drawable/user_avatar_background"
+                android:backgroundTint="@color/destructive" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/user_avatar_background"
+            android:gravity="center"
+            android:text="@string/dashboard_initials"
+            android:textColor="@color/primary_dark"
+            android:textStyle="bold"
+            android:textSize="@dimen/type_body_large" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/dashboard_greeting"
+        android:textSize="@dimen/type_metric"
+        android:textStyle="bold"
+        android:textColor="@color/text_heading" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/dashboard_description"
+        android:textSize="@dimen/type_subheading"
+        android:textColor="@color/text_subheading" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <com.google.android.material.card.MaterialCardView
+            style="@style/DashboardStatCard">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="14dp"
+                android:background="@drawable/dashboard_stat_background">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="9dp"
+                        android:background="@drawable/user_avatar_background"
+                        android:src="@drawable/ic_activity_people"
+                        android:tint="@color/primary_dark" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="5dp"
+                        android:background="@drawable/menu_search_background"
+                        android:backgroundTint="@color/primary_light"
+                        android:text="@string/dashboard_users_growth"
+                        android:textColor="@color/primary_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/type_label" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/dashboard_users"
+                    style="@style/DashboardStatNumber"
+                    android:text="@string/dashboard_users_number" />
+                <TextView
+                    style="@style/DashboardStatLabel"
+                    android:text="@string/dashboard_users" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            style="@style/DashboardStatCard"
+            android:layout_marginStart="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="14dp"
+                android:background="@drawable/dashboard_stat_background">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="9dp"
+                        android:background="@drawable/user_avatar_background"
+                        android:src="@drawable/ic_list_grid"
+                        android:tint="@color/primary_dark" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="5dp"
+                        android:background="@drawable/menu_search_background"
+                        android:backgroundTint="@color/primary_light"
+                        android:text="@string/dashboard_items_growth"
+                        android:textColor="@color/primary_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/type_label" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/dashboard_items"
+                    style="@style/DashboardStatNumber"
+                    android:text="@string/dashboard_items_number" />
+                <TextView
+                    style="@style/DashboardStatLabel"
+                    android:text="@string/dashboard_items" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <com.google.android.material.card.MaterialCardView
+            style="@style/DashboardStatCard">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="14dp"
+                android:background="@drawable/dashboard_stat_background">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="9dp"
+                        android:background="@drawable/user_avatar_background"
+                        android:src="@drawable/ic_user_calendar"
+                        android:tint="@color/primary_dark" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="5dp"
+                        android:background="@drawable/menu_search_background"
+                        android:backgroundTint="@color/primary_light"
+                        android:text="@string/dashboard_requests_growth"
+                        android:textColor="@color/primary_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/type_label" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/dashboard_requests"
+                    style="@style/DashboardStatNumber"
+                    android:text="@string/dashboard_requests_number" />
+                <TextView
+                    style="@style/DashboardStatLabel"
+                    android:text="@string/dashboard_requests" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            style="@style/DashboardStatCard"
+            android:layout_marginStart="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="14dp"
+                android:background="@drawable/dashboard_stat_background">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="9dp"
+                        android:background="@drawable/user_avatar_background"
+                        android:src="@drawable/ic_user_id"
+                        android:tint="@color/primary_dark" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="5dp"
+                        android:background="@drawable/menu_search_background"
+                        android:backgroundTint="@color/primary_light"
+                        android:text="@string/dashboard_completed_growth"
+                        android:textColor="@color/primary_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/type_label" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/dashboard_completed"
+                    style="@style/DashboardStatNumber"
+                    android:text="@string/dashboard_completed_number" />
+                <TextView
+                    style="@style/DashboardStatLabel"
+                    android:text="@string/dashboard_completed" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:padding="10dp"
+            android:background="@drawable/user_avatar_background"
+            android:src="@drawable/ic_user_id"
+            android:tint="@color/primary_dark" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dashboard_important"
+                android:textSize="@dimen/type_card_heading"
+                android:textStyle="bold"
+                android:textColor="@color/text_heading" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/dashboard_important_subtitle"
+                android:textSize="@dimen/type_label"
+                android:textColor="@color/text_subheading" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/dashboard_important_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="32dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:gravity="center"
+            android:background="@drawable/menu_search_background"
+            android:text="@string/dashboard_count"
+            android:textSize="@dimen/type_subheading"
+            android:textStyle="bold"
+            android:textColor="@color/text_subheading" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dashboard_important_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

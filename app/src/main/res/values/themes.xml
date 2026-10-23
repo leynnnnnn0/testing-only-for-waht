@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
+    <style
+        name="Base.Theme.RestaurantApp"
+        parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/arial_rounded_mt_bold</item>
+        <item name="fontFamily">@font/arial_rounded_mt_bold</item>
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorOnSecondary">@color/text_heading</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/text_heading</item>
+        <item name="colorError">@color/destructive</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="android:colorAccent">@color/primary</item>
+        <item name="rolePrimary">@color/primary</item>
+        <item name="rolePrimaryDark">@color/primary_dark</item>
+        <item name="rolePrimaryLight">@color/primary_light</item>
+        <item name="roleAccent">@color/primary_lime</item>
+        <item name="roleOnPrimary">@color/white</item>
+        <item name="rolePageBackground">@color/white</item>
+        <item name="roleOverlayStart">@color/black_75</item>
+        <item name="roleOverlayEnd">@color/black_45</item>
+    </style>
+    <style
+        name="Theme.RestaurantApp"
+        parent="Base.Theme.RestaurantApp" />
+    <style
+        name="Theme.RestaurantApp.Admin"
+        parent="Base.Theme.RestaurantApp">
+        <item name="colorPrimary">@color/admin_primary</item>
+        <item name="colorSecondary">@color/admin_accent</item>
+        <item name="android:colorAccent">@color/admin_primary</item>
+        <item name="rolePrimary">@color/admin_primary</item>
+        <item name="rolePrimaryDark">@color/admin_primary_dark</item>
+        <item name="rolePrimaryLight">@color/admin_primary_light</item>
+        <item name="roleAccent">@color/admin_accent</item>
+        <item name="roleOnPrimary">@color/white</item>
+        <item name="rolePageBackground">@color/admin_page_background</item>
+        <item name="roleOverlayStart">@color/admin_overlay_start</item>
+        <item name="roleOverlayEnd">@color/admin_overlay_end</item>
+    </style>
+    <style
+        name="Theme.RestaurantApp.Personal"
+        parent="Base.Theme.RestaurantApp">
+        <item name="colorPrimary">@color/personal_primary_dark</item>
+        <item name="colorSecondary">@color/personal_primary</item>
+        <item name="android:colorAccent">@color/personal_primary</item>
+        <item name="rolePrimary">@color/personal_primary</item>
+        <item name="rolePrimaryDark">@color/personal_primary_dark</item>
+        <item name="rolePrimaryLight">@color/personal_primary_light</item>
+        <item name="roleAccent">@color/personal_accent</item>
+        <item name="roleOnPrimary">@color/white</item>
+        <item name="rolePageBackground">@color/personal_page_background</item>
+        <item name="roleOverlayStart">@color/personal_overlay_start</item>
+        <item name="roleOverlayEnd">@color/personal_overlay_end</item>
+    </style>
+</resources>

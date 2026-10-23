@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style
+        name="UserDetail"
+        parent="">
+        <item
+            name="android:layout_width">wrap_content</item>
+        <item
+            name="android:layout_height">wrap_content</item>
+        <item
+            name="android:background">@drawable/user_detail_background</item>
+        <item
+            name="android:paddingHorizontal">10dp</item>
+        <item
+            name="android:paddingVertical">7dp</item>
+        <item
+            name="android:gravity">center_vertical</item>
+        <item
+            name="android:textColor">@color/text_body</item>
+        <item
+            name="android:textSize">@dimen/type_detail</item>
+        <item
+            name="android:includeFontPadding">false</item>
+    </style>
+    <style
+        name="UserAvatarShape"
+        parent="">
+        <item
+            name="cornerSize">50%</item>
+    </style>
+    <style name="PersonFactColumn" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingHorizontal">4dp</item>
+    </style>
+    <style name="PersonFactLabel" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_subheading</item>
+        <item name="android:textSize">@dimen/type_caption</item>
+    </style>
+    <style name="PersonFactValue" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textColor">@color/text_heading</item>
+        <item name="android:textSize">@dimen/type_detail</item>
+    </style>
+</resources>

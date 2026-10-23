@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/modal_card">
+    <TextView
+        android:id="@+id/modal_icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/type_modal_symbol"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:scaleX="0"
+        android:scaleY="0"
+        tools:background="@drawable/status_success_circle"
+        tools:scaleX="1"
+        tools:scaleY="1"
+        tools:text="?" />
+    <TextView
+        android:id="@+id/modal_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textSize="@dimen/type_page_heading"
+        android:textStyle="bold"
+        android:textColor="@color/text_heading"
+        android:accessibilityHeading="true"
+        tools:text="Confirm your action" />
+    <TextView
+        android:id="@+id/modal_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="@dimen/type_button"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/text_body"
+        tools:text="Are you sure you want to continue? Confirm to complete this action." />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/modal_cancel"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/modal_cancel"
+            android:text="@android:string/cancel"
+            android:textColor="@color/text_heading"
+            android:textSize="@dimen/type_button"
+            android:textAllCaps="false" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/modal_confirm"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@drawable/modal_confirm"
+            android:backgroundTint="@null"
+            android:elevation="6dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/type_button"
+            android:textAllCaps="false"
+            tools:text="@string/confirm_arrow" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string
+        name="item_available">Available</string>
+    <string
+        name="item_unavailable">Unavailable</string>
+    <string
+        name="item_view_details">View Details</string>
+    <string
+        name="sample_item_name">Cheeseburger</string>
+    <string
+        name="sample_item_category">Fast Food</string>
+    <string
+        name="sample_item_detail">320 calories</string>
+    <string
+        name="sample_item_tag">Beef</string>
+    <string
+        name="sample_item_rating">4.8 (120)</string>
+    <string
+        name="sample_item_location">Manila, PH</string>
+    <string
+        name="sample_item_price">₱120</string>
+    <string
+        name="item_rating">%1$.1f (%2$d)</string>
+    <string
+        name="item_add_favorite">Add to favorites?</string>
+    <string
+        name="item_remove_favorite">Remove from favorites?</string>
+    <string
+        name="item_favorite_message">Update favorites for %1$s?</string>
+    <string
+        name="item_favorite_updated">Favorites updated</string>
+    <string
+        name="item_favorite_preview">This change is for the sample preview only.</string>
+</resources>

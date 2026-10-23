@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_sheet_background"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="16dp">
+
+    <View
+        android:layout_width="38dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/menu_search_background"
+        android:backgroundTint="@color/personal_primary_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:contentDescription="CampusFind helper"
+            android:scaleType="fitCenter"
+            android:src="@drawable/campus_helper_pet" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find My Item"
+                android:textColor="@color/text_heading"
+                android:textSize="@dimen/type_page_heading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Chat with your CampusFind helper"
+                android:textColor="@color/text_subheading"
+                android:textSize="@dimen/type_subheading" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/find_chat_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/user_detail_background"
+            android:contentDescription="Close"
+            android:padding="10dp"
+            android:src="@drawable/ic_notification_close" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/page_divider" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/find_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="12dp"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_find_chat_message" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/chat_composer_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="6dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/find_chat_attach"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Attach photos"
+            android:padding="10dp"
+            android:src="@drawable/ic_chat_attach"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/find_chat_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Type your answer…"
+            android:imeOptions="actionSend"
+            android:inputType="textCapSentences"
+            android:maxLines="3"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/text_heading"
+            android:textColorHint="@color/search_hint"
+            android:textSize="@dimen/type_body" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/find_chat_send"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/chat_send_background"
+            android:contentDescription="Send"
+            android:padding="11dp"
+            android:src="@drawable/ic_chat_send" />
+    </LinearLayout>
+</LinearLayout>

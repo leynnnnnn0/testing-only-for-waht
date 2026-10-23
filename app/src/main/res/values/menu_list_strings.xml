@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string
+        name="menu_title">Menu Items</string>
+    <string
+        name="menu_add">Add Item</string>
+    <string
+        name="menu_search">Search menu items…</string>
+    <string
+        name="menu_all">All  3</string>
+    <string
+        name="menu_food">Food  3</string>
+    <string
+        name="menu_drinks">Drinks  0</string>
+    <string
+        name="menu_desserts">Desserts  0</string>
+    <string
+        name="menu_breakfast">Breakfast  1</string>
+    <string
+        name="menu_lunch">Lunch  1</string>
+    <string
+        name="menu_dinner">Dinner  1</string>
+    <string
+        name="menu_preview">Sample screen</string>
+</resources>

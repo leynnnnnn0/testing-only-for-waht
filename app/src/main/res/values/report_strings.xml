@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="report_title">Report</string>
+    <string name="report_total_count">Total Count</string>
+    <string name="report_sample_total">565</string>
+    <string name="report_breakdown">Breakdown</string>
+    <string name="report_overview">Activity overview</string>
+    <string name="report_overview_subtitle">A clear view of your latest results.</string>
+    <string name="report_sample_label">Sample data</string>
+    <string name="report_total_caption">Across all recorded statuses</string>
+    <string name="report_breakdown_subtitle">See how each status contributes to the total.</string>
+    <string name="report_note_title">About this report</string>
+    <string name="report_note">Each bar shows its status count as a share of the total activity.</string>
+    <string name="report_download_pdf">Download PDF</string>
+</resources>

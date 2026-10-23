@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="person_list_title">Persons</string>
+    <string name="person_add">Add Person</string>
+    <string name="person_search">Search people…</string>
+    <string name="person_all">All</string>
+    <string name="person_active">Active</string>
+    <string name="person_inactive">Inactive</string>
+    <string name="person_add_preview">The Add Person page can be created separately.</string>
+    <string name="person_age_label">Age</string>
+    <string name="person_gender_label">Sex</string>
+    <string name="person_location_label">Location</string>
+    <string name="person_credits_label">Credits</string>
+    <string name="person_gender_sample">Female</string>
+</resources>

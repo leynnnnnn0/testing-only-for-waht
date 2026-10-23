@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/rolePageBackground"
+    android:paddingHorizontal="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/menu_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_list_back" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/menu_title"
+            android:textSize="@dimen/type_page_heading"
+            android:textStyle="bold"
+            android:textColor="@color/text_heading" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/menu_add"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@drawable/item_action_background"
+            android:drawableStart="@drawable/ic_list_plus"
+            android:drawablePadding="6dp"
+            android:drawableTint="@color/white"
+            android:minWidth="0dp"
+            android:paddingHorizontal="12dp"
+            android:text="@string/menu_add"
+            android:textSize="@dimen/type_label"
+            android:textColor="@color/white"
+            android:textAllCaps="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/admin_outline_background">
+        <EditText
+            android:id="@+id/menu_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingStart="18dp"
+            android:paddingEnd="4dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/menu_search"
+            android:singleLine="true"
+            android:inputType="text"
+            android:textColor="@color/search_text"
+            android:textColorHint="@color/search_hint"
+            android:textSize="@dimen/type_body" />
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:src="@drawable/ic_list_search"
+            android:tint="@color/text_heading" />
+    </LinearLayout>
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/menu_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        app:singleLine="false"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:chipSpacingHorizontal="8dp"
+        app:chipSpacingVertical="8dp">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter_all"
+            style="@style/AdminStatusChip"
+            android:text="@string/menu_all"
+            android:checked="true" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter_food"
+            style="@style/AdminStatusChip"
+            android:text="@string/menu_food" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter_drinks"
+            style="@style/AdminStatusChip"
+            android:text="@string/menu_drinks" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter_desserts"
+            style="@style/AdminStatusChip"
+            android:text="@string/menu_desserts" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter_breakfast"
+            style="@style/AdminStatusChip"
+            android:text="@string/menu_breakfast" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter_lunch"
+            style="@style/AdminStatusChip"
+            android:text="@string/menu_lunch" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter_dinner"
+            style="@style/AdminStatusChip"
+            android:text="@string/menu_dinner" />
+    </com.google.android.material.chip.ChipGroup>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            tools:listitem="@layout/sample_item_card_list"
+            tools:itemCount="3"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2" />
+        <include
+            android:id="@+id/menu_empty"
+            layout="@layout/view_empty_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

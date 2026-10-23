@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string
+        name="sample_activity_title">You’re invited to Web Development Class</string>
+    <string
+        name="sample_activity_subtitle">by Alex Rivera</string>
+    <string
+        name="sample_activity_type">Invitation</string>
+    <string
+        name="sample_activity_date">Feb 5, 2024</string>
+    <string
+        name="sample_activity_time">6:00 PM – 7:00 PM</string>
+    <string
+        name="sample_activity_mode">Online</string>
+    <string
+        name="sample_activity_initials">AR</string>
+    <string
+        name="sample_activity_organizer">Alex Rivera</string>
+    <string
+        name="sample_activity_role">Organizer</string>
+    <string
+        name="sample_activity_secondary">Decline</string>
+    <string
+        name="sample_activity_primary">Accept</string>
+    <string name="activity_accept_title">Accept invitation?</string>
+    <string name="activity_decline_title">Decline invitation?</string>
+    <string name="activity_accepted">Invitation accepted</string>
+    <string name="activity_declined">Invitation declined</string>
+</resources>

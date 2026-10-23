@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/rolePageBackground"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+        <ImageView
+            android:id="@+id/activity_show_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/ic_list_back" />
+        <TextView
+            android:id="@+id/activity_show_reference"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/activity_show_sample_reference"
+            android:textColor="@color/text_heading"
+            android:textSize="@dimen/type_section_heading" />
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="24dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="24dp"
+                android:paddingBottom="14dp">
+                <ImageView
+                    android:id="@+id/activity_show_icon"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:background="@drawable/activity_show_icon_background"
+                    android:contentDescription="@string/activity_show_icon_description"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_activity_summary" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    android:text="@string/activity_show_hero_title"
+                    android:textColor="@color/text_heading"
+                    android:textSize="@dimen/type_page_heading" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="@string/activity_show_hero_subtitle"
+                    android:textColor="@color/text_subheading"
+                    android:textSize="@dimen/type_subheading" />
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityShowCard">
+                <TextView
+                    style="@style/ActivityShowHeading"
+                    android:text="@string/activity_show_overview" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/activity_show_title_label"
+                    android:textColor="@color/text_subheading"
+                    android:textSize="@dimen/type_label" />
+                <TextView
+                    android:id="@+id/activity_show_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/sample_activity_title"
+                    android:textColor="@color/text_heading"
+                    android:textSize="@dimen/type_body_large" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/activity_show_organizer_label"
+                    android:textColor="@color/text_subheading"
+                    android:textSize="@dimen/type_label" />
+                <TextView
+                    android:id="@+id/activity_show_organizer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/sample_activity_subtitle"
+                    android:textColor="@color/text_heading"
+                    android:textSize="@dimen/type_body" />
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityShowCard">
+                <TextView
+                    style="@style/ActivityShowHeading"
+                    android:text="@string/activity_show_schedule" />
+                <LinearLayout style="@style/ActivityShowRow">
+                    <TextView
+                        style="@style/ActivityShowLabel"
+                        android:text="@string/activity_show_date_label" />
+                    <TextView
+                        android:id="@+id/activity_show_date"
+                        style="@style/ActivityShowValueBadge"
+                        android:text="@string/sample_activity_date" />
+                </LinearLayout>
+                <LinearLayout style="@style/ActivityShowRow">
+                    <TextView
+                        style="@style/ActivityShowLabel"
+                        android:text="@string/activity_show_time_label" />
+                    <TextView
+                        android:id="@+id/activity_show_time"
+                        style="@style/ActivityShowValue"
+                        android:text="@string/sample_activity_time" />
+                </LinearLayout>
+                <LinearLayout style="@style/ActivityShowRow">
+                    <TextView
+                        style="@style/ActivityShowLabel"
+                        android:text="@string/activity_show_mode_label" />
+                    <TextView
+                        android:id="@+id/activity_show_mode"
+                        style="@style/ActivityShowValueBadge"
+                        android:text="@string/sample_activity_mode" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityShowCard">
+                <TextView
+                    style="@style/ActivityShowHeading"
+                    android:text="@string/activity_show_payment" />
+                <LinearLayout style="@style/ActivityShowRow">
+                    <TextView
+                        style="@style/ActivityShowLabel"
+                        android:text="@string/activity_show_payment_method" />
+                    <TextView
+                        style="@style/ActivityShowValue"
+                        android:text="@string/activity_show_not_required" />
+                </LinearLayout>
+                <LinearLayout style="@style/ActivityShowRow">
+                    <TextView
+                        style="@style/ActivityShowLabel"
+                        android:text="@string/activity_show_amount" />
+                    <TextView
+                        style="@style/ActivityShowValue"
+                        android:text="@string/activity_show_dash" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/search_border" />
+                <LinearLayout style="@style/ActivityShowRow">
+                    <TextView
+                        style="@style/ActivityShowLabel"
+                        android:text="@string/activity_show_total" />
+                    <TextView
+                        style="@style/ActivityShowValue"
+                        android:text="@string/activity_show_dash" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityShowCard">
+                <TextView
+                    style="@style/ActivityShowHeading"
+                    android:text="@string/activity_show_notes" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/activity_show_no_notes"
+                    android:textColor="@color/text_body"
+                    android:textSize="@dimen/type_subheading" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

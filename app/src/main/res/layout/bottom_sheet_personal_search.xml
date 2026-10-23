@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_sheet_background"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="20dp">
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/menu_search_background"
+        android:backgroundTint="?attr/rolePrimaryLight" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial_rounded_mt_bold"
+            android:text="@string/personal_search_title"
+            android:textColor="@color/text_heading"
+            android:textSize="@dimen/type_page_heading" />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/personal_search_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/user_detail_background"
+            android:contentDescription="@string/personal_search_close_description"
+            android:padding="10dp"
+            android:src="@drawable/ic_notification_close" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/admin_outline_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/personal_search_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="@string/personal_search_hint"
+            android:inputType="text"
+            android:paddingStart="18dp"
+            android:paddingEnd="4dp"
+            android:singleLine="true"
+            android:textColor="@color/search_text"
+            android:textColorHint="@color/search_hint"
+            android:textSize="@dimen/type_body" />
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:padding="12dp"
+            android:src="@drawable/ic_list_search"
+            android:tint="@color/text_heading" />
+    </LinearLayout>
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/personal_search_filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        app:chipSpacingHorizontal="8dp"
+        app:chipSpacingVertical="8dp"
+        app:selectionRequired="true"
+        app:singleLine="false"
+        app:singleSelection="true" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/personal_search_results"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:itemCount="3"
+            tools:listitem="@layout/sample_item_card_list" />
+        <include
+            android:id="@+id/personal_search_empty"
+            layout="@layout/view_empty_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

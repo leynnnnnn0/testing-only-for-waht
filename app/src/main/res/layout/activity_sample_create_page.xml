@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/rolePageBackground"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+        <ImageView
+            android:id="@+id/create_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/ic_list_back" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/create_page_title"
+            android:textColor="@color/text_heading"
+            android:textSize="@dimen/type_section_heading"
+            android:textStyle="bold" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/create_save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/form_action_solid"
+            android:paddingHorizontal="14dp"
+            android:text="@string/create_save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/type_label" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/admin_outline_background"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_form_folder" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/create_page_heading"
+                    android:textColor="@color/text_heading"
+                    android:textSize="@dimen/type_card_heading"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/create_page_subtitle"
+                android:textColor="@color/text_subheading"
+                android:textSize="@dimen/type_label" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="14dp"
+                android:background="@color/page_divider" />
+            <FrameLayout
+                android:id="@+id/create_image_picker"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:background="@drawable/form_upload_background"
+                android:clipToOutline="true">
+                <ImageView
+                    android:id="@+id/create_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone" />
+                <LinearLayout
+                    android:id="@+id/create_image_prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_form_upload" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/create_image_hint"
+                        android:textColor="@color/text_heading"
+                        android:textSize="@dimen/type_subheading" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="@string/create_image_note"
+                        android:textColor="@color/field_hint"
+                        android:textSize="@dimen/type_detail" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/CreateLabel"
+                        android:text="@string/create_name_label" />
+                    <EditText
+                        android:id="@+id/create_name"
+                        style="@style/CreateField"
+                        android:hint="@string/create_name_hint"
+                        android:inputType="textCapSentences"
+                        android:singleLine="true" />
+                    <TextView
+                        android:id="@+id/create_name_error"
+                        style="@style/CreateFieldError"
+                        android:text="@string/create_name_required"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/CreateLabel"
+                        android:text="@string/create_date_label" />
+                    <EditText
+                        android:id="@+id/create_date"
+                        style="@style/CreateField"
+                        android:drawableStart="@drawable/ic_user_calendar"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="@color/field_icon"
+                        android:focusable="false"
+                        android:hint="@string/create_date_hint" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/CreateLabel"
+                android:text="@string/create_description_label" />
+            <EditText
+                android:id="@+id/create_description"
+                style="@style/CreateField"
+                android:layout_height="88dp"
+                android:gravity="top"
+                android:hint="@string/create_description_hint"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingVertical="10dp" />
+            <TextView
+                style="@style/CreateLabel"
+                android:text="@string/create_tags_label" />
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/create_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                app:chipSpacingHorizontal="8dp"
+                app:chipSpacingVertical="8dp"
+                app:singleLine="false"
+                app:singleSelection="false">
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/create_tag_design"
+                    style="@style/AdminStatusChip"
+                    android:checked="true"
+                    android:text="@string/create_tag_design" />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/create_tag_marketing"
+                    style="@style/AdminStatusChip"
+                    android:checked="true"
+                    android:text="@string/create_tag_marketing" />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/create_tag_documentation"
+                    style="@style/AdminStatusChip"
+                    android:text="@string/create_tag_documentation" />
+            </com.google.android.material.chip.ChipGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/CreateLabel"
+                        android:text="@string/create_number_label" />
+                    <EditText
+                        android:id="@+id/create_number"
+                        style="@style/CreateField"
+                        android:hint="@string/create_number_hint"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/CreateLabel"
+                        android:text="@string/create_time_label" />
+                    <EditText
+                        android:id="@+id/create_time"
+                        style="@style/CreateField"
+                        android:drawableStart="@drawable/ic_activity_clock"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="@color/field_icon"
+                        android:focusable="false"
+                        android:hint="@string/create_time_hint" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/CreateLabel"
+                android:text="@string/create_option_label" />
+            <Spinner
+                android:id="@+id/create_category"
+                style="@style/CreateField"
+                android:entries="@array/create_categories" />
+            <TextView
+                style="@style/CreateLabel"
+                android:text="@string/create_radio_label" />
+            <RadioGroup
+                android:id="@+id/create_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:checkedButton="@id/create_status_active"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/create_status_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/success"
+                    android:text="@string/create_radio_active"
+                    android:textSize="@dimen/type_subheading" />
+                <RadioButton
+                    android:id="@+id/create_status_inactive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:buttonTint="@color/success"
+                    android:text="@string/create_radio_inactive"
+                    android:textSize="@dimen/type_subheading" />
+            </RadioGroup>
+            <CheckBox
+                android:id="@+id/create_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:buttonTint="@color/success"
+                android:checked="true"
+                android:text="@string/create_checkbox"
+                android:textSize="@dimen/type_subheading" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

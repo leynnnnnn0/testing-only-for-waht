@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_remove_title">Remove notification?</string>
+    <string name="notification_remove_message">This notification will be removed from the list.</string>
+    <string name="notification_removed_title">Notification removed</string>
+    <string name="notification_removed_message">The notification was removed.</string>
+</resources>

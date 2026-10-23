@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActivityShowCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:background">@drawable/admin_outline_background</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <style name="ActivityShowHeading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/arial_rounded_mt_bold</item>
+        <item name="android:textColor">?attr/rolePrimaryDark</item>
+        <item name="android:textSize">@dimen/type_body_large</item>
+    </style>
+    <style name="ActivityShowRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="ActivityShowLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text_subheading</item>
+        <item name="android:textSize">@dimen/type_subheading</item>
+    </style>
+    <style name="ActivityShowValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_heading</item>
+        <item name="android:textSize">@dimen/type_subheading</item>
+    </style>
+    <style name="ActivityShowValueBadge" parent="green_badge">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:maxWidth">220dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

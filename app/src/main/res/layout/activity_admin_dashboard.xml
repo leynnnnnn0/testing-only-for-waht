@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/rolePageBackground"
+    tools:context=".admin.AdminDashboardActivity">
+    <FrameLayout
+        android:id="@+id/admin_header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/dashboard_header_background"
+        android:clipToOutline="true"
+        android:elevation="8dp"
+        android:outlineProvider="background">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/personal_seats_5" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dashboard_header_image_overlay" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="22dp"
+            android:paddingTop="22dp"
+            android:paddingBottom="18dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/AdminHeading"
+                    android:textColor="@color/white"
+                    android:text="@string/admin_hello" />
+                <TextView
+                    style="@style/AdminHeading"
+                    android:textColor="@color/white"
+                    android:text="@string/admin_name" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/admin_notifications_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless">
+                <ImageView
+                    android:id="@+id/admin_bell_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_dashboard_bell"
+                    android:tint="@color/white" />
+                <View
+                    android:id="@+id/admin_notification_dot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/user_avatar_background"
+                    android:backgroundTint="@color/destructive" />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/admin_avatar_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/admin_avatar_background"
+                android:clickable="true"
+                android:contentDescription="@string/admin_account_menu"
+                android:focusable="true"
+                android:fontFamily="@font/arial_rounded_mt_bold"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="@string/admin_initials"
+                android:textColor="?attr/rolePrimaryDark" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/admin_subtitle"
+            android:textColor="?attr/rolePrimaryLight"
+            android:textSize="@dimen/type_body" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/admin_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="22dp"
+            android:paddingBottom="20dp">
+            <ViewFlipper
+                android:id="@+id/admin_feature"
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:layout_marginTop="16dp"
+                android:autoStart="false"
+                android:flipInterval="3900"
+                android:inAnimation="@android:anim/fade_in"
+                android:outAnimation="@android:anim/fade_out" />
+
+            <LinearLayout
+                android:id="@+id/admin_metrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+                <LinearLayout
+                    android:id="@+id/admin_items_metric"
+                    style="@style/AdminMetricFloatingCard"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground">
+                    <TextView
+                        style="@style/AdminMetricLabel"
+                        android:text="@string/admin_items_metric_title" />
+                    <TextView
+                        android:id="@+id/admin_items_metric_value"
+                        style="@style/AdminMetricValue"
+                        android:text="3" />
+                    <TextView
+                        style="@style/AdminMetricChange"
+                        android:text="@string/admin_items_metric_action"
+                        android:textColor="?attr/rolePrimaryDark" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/admin_persons_metric"
+                    style="@style/AdminMetricCard"
+                    android:layout_marginStart="12dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground">
+                    <TextView
+                        style="@style/AdminMetricLabel"
+                        android:text="@string/admin_persons_metric_title" />
+                    <TextView
+                        android:id="@+id/admin_persons_metric_value"
+                        style="@style/AdminMetricValue"
+                        android:text="3" />
+                    <TextView
+                        style="@style/AdminMetricChange"
+                        android:text="@string/admin_persons_metric_action"
+                        android:textColor="?attr/rolePrimaryDark" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/admin_outline_background">
+                <EditText
+                    android:id="@+id/admin_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="4dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/admin_search_hint"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:textColor="@color/search_text"
+                    android:textColorHint="@color/search_hint"
+                    android:textSize="@dimen/type_body" />
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_list_search"
+                    android:tint="@color/text_heading" />
+            </LinearLayout>
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/admin_statuses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:singleLine="false"
+                app:singleSelection="true"
+                app:selectionRequired="false"
+                app:chipSpacingHorizontal="8dp"
+                app:chipSpacingVertical="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arial_rounded_mt_bold"
+                        android:text="@string/admin_sample_items"
+                        android:textColor="@color/text_heading"
+                        android:textSize="@dimen/type_section_heading" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/admin_sample_items_subheading"
+                        android:textColor="@color/text_subheading"
+                        android:textSize="@dimen/type_subheading" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/admin_transaction_count1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/role_pill_background"
+                    android:gravity="center"
+                    android:minWidth="42dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="7dp"
+                    android:text="@string/admin_zero_items"
+                    android:textColor="?attr/rolePrimaryDark"
+                    android:textSize="@dimen/type_subheading" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/admin_transactions_list1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="visible" />
+            <include
+                android:id="@+id/admin_items_empty"
+                android:visibility="gone"
+                layout="@layout/view_empty_list" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arial_rounded_mt_bold"
+                        android:text="@string/admin_sample_activities"
+                        android:textColor="@color/text_heading"
+                        android:textSize="@dimen/type_section_heading" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/admin_sample_activities_subheading"
+                        android:textColor="@color/text_subheading"
+                        android:textSize="@dimen/type_subheading" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/admin_transaction_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/role_pill_background"
+                    android:gravity="center"
+                    android:minWidth="42dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="7dp"
+                    android:text="@string/admin_zero_items"
+                    android:textColor="?attr/rolePrimaryDark"
+                    android:textSize="@dimen/type_subheading" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/admin_outline_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/admin_activities_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/admin_activities_search_hint"
+                    android:inputType="text"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="4dp"
+                    android:singleLine="true"
+                    android:textColor="@color/search_text"
+                    android:textColorHint="@color/search_hint"
+                    android:textSize="@dimen/type_body" />
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_list_search"
+                    android:tint="@color/text_heading" />
+            </LinearLayout>
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/admin_activity_filters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:chipSpacingHorizontal="8dp"
+                app:chipSpacingVertical="8dp"
+                app:selectionRequired="true"
+                app:singleLine="false"
+                app:singleSelection="true" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/admin_transactions_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="visible" />
+            <include
+                android:id="@+id/admin_activities_empty"
+                android:visibility="gone"
+                layout="@layout/view_empty_list" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
